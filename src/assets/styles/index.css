@@ -5,7 +5,17 @@
 /* Global Styles */
 
 @layer base {
-  h1 {
-    @apply font-primary text-black font-bold text-5xl;
+
+  body {
+    @apply font-primary overflow-x-hidden bg-dark;
   }
+
+  h1 {
+    @apply text-black font-extrabold text-9xl;
+  }
+
+  a {
+    @apply hover:brightness-90;
+  }
+
 }
