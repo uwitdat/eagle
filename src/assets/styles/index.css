@@ -14,8 +14,20 @@
     @apply text-black font-extrabold text-9xl;
   }
 
+  h2 {
+    @apply font-extrabold text-8xl;
+  }
+
+  h3 {
+    @apply font-extrabold text-5xl;
+  }
+
   a {
     @apply hover:brightness-90;
+  }
+
+  span {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-white to-accent
   }
 
 }

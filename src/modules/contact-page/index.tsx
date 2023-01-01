@@ -1,7 +1,5 @@
-import Section from '../../components/Section'
-
 const ContactPage = () => {
-  return <Section>CONTACT US PAGE</Section>
+  return <div>hi</div>
 }
 
 export default ContactPage
