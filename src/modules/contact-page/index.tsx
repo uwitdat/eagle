@@ -1,7 +1,7 @@
 import {
   AiFillPhone,
   AiFillInstagram,
-  AiFillLinkedin,
+  AiFillYoutube,
   AiFillMail,
 } from 'react-icons/ai'
 import clsx from 'clsx'
@@ -31,7 +31,9 @@ const ContactPage = () => {
         <h2 className="text-white">
           Get In <span>Touch</span>
         </h2>
-        <p className="mt-2">Quality entertainment, is only a click away...</p>
+        <p className="mt-2">
+          Quality entertainment. Catered to you, is only a click away.
+        </p>
       </div>
 
       <div className="mt-14">
@@ -43,16 +45,20 @@ const ContactPage = () => {
           }
           ref={ref}
         >
-          {ICONS.map(({ id, icon, link }) => (
+          {ICONS.map(({ id, icon, link, ariaLabel }) => (
             <div
               className={clsx(
-                'transition-all duration-200 p-2',
-                'rounded-full bg-white cursor-pointer',
-                'hover:bg-gray-400 hover:translate-y-[-.25rem]'
+                'transition-all p-2',
+                'rounded-full bg-white cursor-pointer'
               )}
               key={id}
             >
-              <a href={link} target="_blank" rel="noreferrer">
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={ariaLabel}
+              >
                 {icon}
               </a>
             </div>
@@ -76,24 +82,28 @@ const iconStyle = {
 
 const ICONS = [
   {
+    id: 0,
+    icon: <AiFillMail {...iconStyle} />,
+    link: 'mailto:eaglemusicservices@gmail.com',
+    ariaLabel: 'Mail',
+  },
+  {
     id: 1,
     icon: <AiFillPhone {...iconStyle} />,
     link: 'tel:+16473385058',
+    ariaLabel: 'Phone',
   },
   {
     id: 2,
-    icon: <AiFillInstagram {...iconStyle} />,
-    link: '#',
+    icon: <AiFillYoutube {...iconStyle} />,
+    link: 'https://www.youtube.com/watch?v=VH14HmAvxQE',
+    ariaLabel: 'Youtube',
   },
   {
     id: 3,
-    icon: <AiFillLinkedin {...iconStyle} />,
+    icon: <AiFillInstagram {...iconStyle} />,
     link: '#',
-  },
-  {
-    id: 4,
-    icon: <AiFillMail {...iconStyle} />,
-    link: 'mailto:eaglemusicservices@gmail.com',
+    ariaLabel: 'Instagram',
   },
 ]
 

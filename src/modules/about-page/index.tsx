@@ -9,7 +9,7 @@ const AboutPage = () => {
 
       <div className="flex justify-center items-center mt-20">
         <div className="mr-60">
-          <h3 className="text-white mb-5">What We Do</h3>
+          <h3 className="text-white mb-5">What We Do.</h3>
           <p className="text-white mb-2 w-full max-w-lg">
             Eagle Music is your go-to source for all things entertainment. We
             specialize in providing live music, DJ services, multimedia, and
@@ -38,7 +38,7 @@ const AboutPage = () => {
         >
           <img
             alt="man with microphone"
-            src="/images/pix-2.jpg"
+            src="/images/pix-2.avif"
             className="h-full w-full rounded-full object-cover"
           />
           <div

@@ -15,7 +15,7 @@ const HomePage = () => {
             className="relative z-10 mr-60"
           >
             <img
-              src="/images/pix.jpg"
+              src="/images/pix.avif"
               alt="main band image"
               className="h-full w-full rounded-full object-cover"
             />
