@@ -10,7 +10,7 @@ const AboutPage = () => {
       <div className="flex justify-center items-center mt-20">
         <div className="mr-60">
           <h3 className="text-white mb-5">What We Do</h3>
-          <p className="text-white text-2xl font-extralight leading-relaxed mb-2 w-full max-w-lg">
+          <p className="text-white mb-2 w-full max-w-lg">
             Eagle Music is your go-to source for all things entertainment. We
             specialize in providing live music, DJ services, multimedia, and
             visual performances for events. Our goal is to create unforgettable
@@ -18,7 +18,7 @@ const AboutPage = () => {
           </p>
 
           <div className="relative mt-7">
-            <p className="text-2xl text-gray-400 font-extralight leading-relaxed w-full max-w-lg">
+            <p className="w-full max-w-lg">
               With a focus on excellence, we ensure that every performance is of
               the highest quality and sure to be a hit with all who witness it.
             </p>

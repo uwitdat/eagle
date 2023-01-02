@@ -1,12 +1,7 @@
 import Nav from '../../components/Nav'
-import { useInView } from 'react-intersection-observer'
 import { PATHS } from '../../constants/paths'
 
 const HomePage = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  })
-
   return (
     <section className="h-screen snap-start">
       <Nav />
@@ -28,12 +23,12 @@ const HomePage = () => {
           </div>
 
           <div>
-            <p className="text-white text-2xl text-gray-400 font-extralight leading-relaxed">
+            <p>
               Redefining the way you book, <br />
               interact, and enjoy your entertainment.{' '}
             </p>
             <div className="flex mt-8 gap-3">
-              <a href={PATHS.ABOUT}>
+              <a href={PATHS.CONTACT}>
                 <button className="text-black border-2 border-black bg-white rounded-lg text-xl py-3 px-8 font-bold">
                   Get In Touch
                 </button>

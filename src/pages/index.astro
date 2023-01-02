@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro'
 import HomePage from '../modules/home-page'
 import AboutPage from '../modules/about-page'
 import ServicesPage from '../modules/services-page'
+import ContactPage from '../modules/contact-page'
 ---
 
 <Layout>
@@ -13,5 +14,6 @@ import ServicesPage from '../modules/services-page'
     <HomePage client:load />
     <AboutPage client:load />
     <ServicesPage />
+    <ContactPage client:load />
   </main>
 </Layout>
