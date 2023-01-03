@@ -29,6 +29,7 @@ module.exports = {
       },
       colors: {
         dark: 'rgb(7, 7, 7)',
+        'dark-nav': 'rgb(7, 7, 7, .90)',
         primary: '#ba0053',
         secondary: '#1B6CE0',
         accent: '#9B91B3',
@@ -38,6 +39,22 @@ module.exports = {
         100: '28rem',
       },
       keyframes: {
+        fadeIn: {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
+        fadeOut: {
+          '0%': {
+            opacity: '1',
+          },
+          '100%': {
+            opacity: '0',
+          },
+        },
         fade: {
           '0%': {
             opacity: '0',
@@ -54,6 +71,8 @@ module.exports = {
       },
       animation: {
         'fade-in-list': 'fade 0.5s linear',
+        'fade-in': 'fadeIn .350s forwards',
+        'fade-out': 'fadeOut .350s forwards',
       },
     },
   },
