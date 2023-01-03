@@ -35,6 +35,10 @@ module.exports = {
         accent: '#9B91B3',
         'accent-2': 'rgb(255, 255, 255, .2)',
       },
+      spacing: {
+        double: '200%',
+        'almost-double': '150%',
+      },
       height: {
         100: '28rem',
       },
