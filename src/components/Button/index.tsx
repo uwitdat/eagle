@@ -5,7 +5,8 @@ interface ButtonProps {
   variant?: 'solid'
 }
 
-const BASE = 'border-2 rounded-lg text-xl py-3 px-8 font-bold'
+const BASE =
+  'border-2 rounded-lg w-full sm:w-auto text-sm md:text-base lg:text-xl py-3 px-4 sm:px-8 font-bold'
 
 export const Button = ({ children, variant }: ButtonProps) => {
   const btnClass = useMemo(() => {

@@ -2,29 +2,15 @@ interface ImageProps {
   src: string
   alt: string
   leftBorder?: boolean
-  className?: string
 }
 
-export const ImageWBorder = ({
-  src,
-  alt,
-  leftBorder = false,
-  className,
-}: ImageProps) => {
-  const styles = leftBorder
-    ? 'absolute w-full h-full border-2 rounded-full top-4 right-4 border-accent'
-    : 'absolute w-full h-full border-2 rounded-full top-4 left-4 border-accent'
+const BASE = 'absolute w-full h-full border-2 rounded-full top-4 border-accent'
+
+export const ImageWBorder = ({ src, alt, leftBorder = false }: ImageProps) => {
+  const styles = leftBorder ? `${BASE} right-4` : `${BASE} left-4`
 
   return (
-    <div
-      style={{
-        aspectRatio: '1',
-        height: '28rem',
-        zIndex: 10,
-        position: 'relative',
-      }}
-      className={className || ''}
-    >
+    <div className="aspect-square relative z-10 h-64 sm:h-72 sm:h-80 mobile:h-96 xl:h-100">
       <img
         alt={alt}
         src={src}

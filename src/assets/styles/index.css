@@ -11,7 +11,7 @@
   }
 
   h1 {
-    @apply text-white font-extrabold text-9xl;
+    @apply text-white font-extrabold text-6xl inbetween:text-7xl mobile:text-8xl xl:text-9xl;
   }
 
   h2 {

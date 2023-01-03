@@ -2,6 +2,27 @@
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    screens: {
+      xs: '360px',
+      sm: '430px',
+      // => @media (min-width: 640px) { ... }
+
+      inbetween: '500px',
+
+      md: '768px',
+      // => @media (min-width: 768px) { ... }
+
+      mobile: '920px',
+
+      lg: '1070px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1400px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       fontFamily: {
         primary: ['Manrope', 'sans-serif'],
@@ -13,21 +34,8 @@ module.exports = {
         accent: '#9B91B3',
         'accent-2': 'rgb(255, 255, 255, .2)',
       },
-      screens: {
-        sm: '420px',
-        // => @media (min-width: 640px) { ... }
-
-        md: '768px',
-        // => @media (min-width: 768px) { ... }
-
-        lg: '1024px',
-        // => @media (min-width: 1024px) { ... }
-
-        xl: '1280px',
-        // => @media (min-width: 1280px) { ... }
-
-        '2xl': '1536px',
-        // => @media (min-width: 1536px) { ... }
+      height: {
+        100: '28rem',
       },
       keyframes: {
         fade: {
