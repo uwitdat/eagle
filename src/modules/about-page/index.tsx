@@ -34,10 +34,7 @@ const AboutPage = () => {
             />
           </div>
         </div>
-        <ImageWBorder
-          alt="Man With Microphone"
-          src="/image-assets/pix-2.avif"
-        />
+        <ImageWBorder alt="Man With Microphone" src={'/images/pix-2.avif'} />
       </div>
     </section>
   )

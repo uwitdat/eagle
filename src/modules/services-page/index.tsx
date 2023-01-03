@@ -30,11 +30,7 @@ const ServicesPage = () => {
 
       <div className="flex flex-col justify-between flex-grow">
         <div className="flex justify-center py-10 mt-3">
-          <ImageWBorder
-            alt="Woman DJ"
-            src="/image-assets/pix-3.avif"
-            leftBorder
-          />
+          <ImageWBorder alt="Woman DJ" src="/images/pix-3.avif" leftBorder />
 
           <div className="relative ml-60">
             <h3 className="mb-5 text-white">Is Eagle For You?</h3>
