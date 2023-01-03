@@ -1,21 +1,12 @@
 import { PATHS } from '../../constants/paths'
 import { SiEagle } from 'react-icons/si/index'
 import { RxHamburgerMenu } from 'react-icons/rx/index'
-import { useState, useEffect } from 'react'
-import disableScroll from 'disable-scroll'
 import { MobileNavMenu } from './MobileNavMenu'
+import { useHandleNav } from './MobileNavMenu/hooks/useHandleNav'
+import './styles.css'
 
 const Nav = () => {
-  const [toggleNav, setToggleNav] = useState(false)
-
-  useEffect(() => {
-    if (toggleNav) {
-      disableScroll.on()
-    } else {
-      disableScroll.off()
-    }
-  }, [toggleNav])
-
+  const { navActive, showNav, handleToggleNav } = useHandleNav()
   return (
     <nav
       style={{ height: '4rem' }}
@@ -43,11 +34,13 @@ const Nav = () => {
 
         <button
           className="relative z-20 block ml-auto md:hidden"
-          onClick={() => setToggleNav(!toggleNav)}
+          onClick={handleToggleNav}
         >
-          <span className="text-2xl text-white">
-            <RxHamburgerMenu />
-          </span>
+          <div id="nav-icon4" className={navActive ? 'open-icon' : ''}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </button>
 
         <a href={PATHS.CONTACT} className="hidden ml-auto md:block">
@@ -56,8 +49,12 @@ const Nav = () => {
           </button>
         </a>
       </div>
-
-      <MobileNavMenu active={toggleNav} setActive={setToggleNav} />
+      {showNav && (
+        <MobileNavMenu
+          handleToggleNav={handleToggleNav}
+          navActive={navActive}
+        />
+      )}
     </nav>
   )
 }

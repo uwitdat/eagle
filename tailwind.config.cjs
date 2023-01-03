@@ -72,9 +72,9 @@ module.exports = {
       animation: {
         'fade-in-list': 'fade 0.5s linear',
         'fade-in': 'fadeIn .350s forwards',
-        'fade-out': 'fadeOut .350s forwards',
+        'fade-out': 'fadeOut .550s forwards',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }
