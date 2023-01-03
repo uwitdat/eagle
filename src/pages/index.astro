@@ -9,11 +9,11 @@ import ContactPage from '../modules/contact-page'
 
 <Layout>
   <main
-    class="scroll-smooth h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory"
+    class="h-screen overflow-x-hidden overflow-y-scroll scroll-smooth snap-y snap-mandatory"
   >
     <HomePage />
     <AboutPage />
-    <ServicesPage />
+    <ServicesPage client:visible />
     <ContactPage client:visible />
   </main>
 </Layout>

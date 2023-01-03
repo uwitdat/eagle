@@ -17,7 +17,7 @@ const ContactPage = () => {
 
   return (
     <section
-      className="bg-dark h-screen snap-start flex flex-col justify-center relative"
+      className="relative flex flex-col justify-center h-screen bg-dark snap-start"
       id="contact"
     >
       <div
@@ -66,7 +66,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 p-5 w-full text-center">
+      <div className="absolute bottom-0 w-full p-5 text-center">
         <p className="text-base">
           &copy; {currentYear} Eagle Music Services. All Rights Reserved.
         </p>

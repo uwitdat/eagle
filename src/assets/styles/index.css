@@ -22,6 +22,10 @@
     @apply font-extrabold text-5xl;
   }
 
+  h4, h5 {
+    @apply font-extrabold text-2xl;
+  }
+
   a {
     @apply hover:brightness-90;
   }

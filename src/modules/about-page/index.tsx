@@ -1,16 +1,18 @@
+import { ImageWBorder } from '../../components/ImageWBorder'
+
 const AboutPage = () => {
   return (
-    <section className="bg-dark h-screen snap-start flex flex-col" id="about">
+    <section className="flex flex-col h-screen bg-dark snap-start" id="about">
       <div className="text-right">
-        <h2 className="text-white mt-20 mr-60">
+        <h2 className="mt-20 text-white mr-60">
           About <span>Us</span>
         </h2>
       </div>
 
-      <div className="flex justify-center items-center mt-20">
+      <div className="flex items-center justify-center mt-20">
         <div className="mr-60">
-          <h3 className="text-white mb-5">What We Do.</h3>
-          <p className="text-white mb-2 w-full max-w-lg">
+          <h3 className="mb-5 text-white">What We Do.</h3>
+          <p className="w-full max-w-lg mb-2 text-white">
             Eagle Music is your go-to source for all things entertainment. We
             specialize in providing live music, DJ services, multimedia, and
             visual performances for events. Our goal is to create unforgettable
@@ -28,24 +30,11 @@ const AboutPage = () => {
                 width: '200%',
                 top: '-.8rem',
               }}
-              className="absolute bg-white left-0"
+              className="absolute left-0 bg-white"
             />
           </div>
         </div>
-        <div
-          style={{ aspectRatio: '1', height: '28rem' }}
-          className="relative z-10"
-        >
-          <img
-            alt="man with microphone"
-            src="/images/pix-2.avif"
-            className="h-full w-full rounded-full object-cover"
-          />
-          <div
-            style={{ zIndex: -1 }}
-            className="top-4 left-4 h-full w-full absolute border-2 border-accent rounded-full"
-          />
-        </div>
+        <ImageWBorder alt="Man With Microphone" src="/images/pix-2.avif" />
       </div>
     </section>
   )
