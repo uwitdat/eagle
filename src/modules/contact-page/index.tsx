@@ -3,7 +3,7 @@ import {
   AiFillInstagram,
   AiFillYoutube,
   AiFillMail,
-} from 'react-icons/ai'
+} from 'react-icons/ai/index'
 import clsx from 'clsx'
 import { useInView } from 'react-intersection-observer'
 import { ANIMATIONS } from '../../constants/animations'

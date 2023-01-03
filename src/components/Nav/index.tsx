@@ -1,5 +1,5 @@
 import { PATHS } from '../../constants/paths'
-import { SiEagle } from 'react-icons/si'
+import { SiEagle } from 'react-icons/si/index'
 
 const Nav = () => {
   return (
