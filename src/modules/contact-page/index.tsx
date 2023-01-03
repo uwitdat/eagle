@@ -17,7 +17,7 @@ const ContactPage = () => {
 
   return (
     <section
-      className="relative flex flex-col justify-center h-screen bg-dark snap-start"
+      className="relative flex flex-col justify-center h-screen bg-dark snap-start px-6"
       id="contact"
     >
       <div
@@ -28,7 +28,7 @@ const ContactPage = () => {
             : `text-center ${ANIMATIONS.FADE_IN.initial}`
         }
       >
-        <h2 className="text-white">
+        <h2>
           Get In <span>Touch</span>
         </h2>
         <p className="mt-2">
@@ -40,8 +40,8 @@ const ContactPage = () => {
         <div
           className={
             inView
-              ? `flex gap-20 w-max mx-auto ${ANIMATIONS.SLIDE_LEFT.initial} ${ANIMATIONS.SLIDE_LEFT.animate}`
-              : `flex gap-20 w-max mx-auto ${ANIMATIONS.SLIDE_LEFT.initial}`
+              ? `flex gap-8 sm:gap-14 md:gap-20 w-max mx-auto ${ANIMATIONS.SLIDE_LEFT.initial} ${ANIMATIONS.SLIDE_LEFT.animate}`
+              : `flex gap-8 sm:gap-14 md:gap-20 w-max mx-auto ${ANIMATIONS.SLIDE_LEFT.initial}`
           }
           ref={ref}
         >
@@ -66,8 +66,8 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full p-5 text-center">
-        <p className="text-base">
+      <div className="absolute bottom-0 left-0 right-0 p-5 text-center">
+        <p className="text-sm sm:text-base">
           &copy; {currentYear} Eagle Music Services. All Rights Reserved.
         </p>
       </div>
@@ -75,33 +75,46 @@ const ContactPage = () => {
   )
 }
 
-const iconStyle = {
-  color: 'black',
-  fontSize: '2rem',
-}
+const ICON_CLASS = 'text-black text-xl sm:text-3xl md:text-3xl'
 
 const ICONS = [
   {
     id: 0,
-    icon: <AiFillMail {...iconStyle} />,
+    icon: (
+      <span className={ICON_CLASS}>
+        <AiFillMail />
+      </span>
+    ),
     link: 'mailto:eaglemusicservices@gmail.com',
     ariaLabel: 'Mail',
   },
   {
     id: 1,
-    icon: <AiFillPhone {...iconStyle} />,
+    icon: (
+      <span className={ICON_CLASS}>
+        <AiFillPhone />
+      </span>
+    ),
     link: 'tel:+16473385058',
     ariaLabel: 'Phone',
   },
   {
     id: 2,
-    icon: <AiFillYoutube {...iconStyle} />,
+    icon: (
+      <span className={ICON_CLASS}>
+        <AiFillYoutube />
+      </span>
+    ),
     link: 'https://www.youtube.com/watch?v=VH14HmAvxQE',
     ariaLabel: 'Youtube',
   },
   {
     id: 3,
-    icon: <AiFillInstagram {...iconStyle} />,
+    icon: (
+      <span className={ICON_CLASS}>
+        <AiFillInstagram />
+      </span>
+    ),
     link: '#',
     ariaLabel: 'Instagram',
   },

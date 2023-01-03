@@ -11,19 +11,19 @@
   }
 
   h1 {
-    @apply text-black font-extrabold text-9xl;
+    @apply text-white font-extrabold text-9xl;
   }
 
   h2 {
-    @apply font-extrabold text-8xl;
+    @apply text-white font-extrabold text-6xl md:text-7xl lg:text-8xl tracking-wide;
   }
 
   h3 {
-    @apply font-extrabold text-5xl;
+    @apply text-white font-extrabold text-5xl;
   }
 
   h4, h5 {
-    @apply font-extrabold text-2xl;
+    @apply text-white font-extrabold text-2xl;
   }
 
   a {
@@ -31,7 +31,7 @@
   }
 
   p {
-    @apply text-2xl text-gray-400 font-extralight leading-relaxed
+    @apply text-lg sm:text-xl lg:text-2xl text-gray-400 font-extralight leading-relaxed
   }
 
   span {
