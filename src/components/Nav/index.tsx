@@ -1,9 +1,8 @@
 import { PATHS } from '../../constants/paths'
 import { SiEagle } from 'react-icons/si/index'
-import { RxHamburgerMenu } from 'react-icons/rx/index'
 import { MobileNavMenu } from './MobileNavMenu'
 import { useHandleNav } from './MobileNavMenu/hooks/useHandleNav'
-import './styles.css'
+import { MobileNavIcon } from './MobileNavIcon'
 
 const Nav = () => {
   const { navActive, showNav, handleToggleNav } = useHandleNav()
@@ -36,11 +35,7 @@ const Nav = () => {
           className="relative z-20 block ml-auto md:hidden"
           onClick={handleToggleNav}
         >
-          <div id="nav-icon4" className={navActive ? 'open-icon' : ''}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <MobileNavIcon navActive={navActive} />
         </button>
 
         <a href={PATHS.CONTACT} className="hidden ml-auto md:block">
