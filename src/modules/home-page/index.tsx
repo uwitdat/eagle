@@ -13,7 +13,7 @@ const HomePage = () => {
         </h1>
         <div className="flex items-center justify-center mt-20">
           <ImageWBorder
-            src="/images/pix.avif"
+            src="/image-assets/pix.avif"
             alt="main band image"
             className="mr-60"
             leftBorder
