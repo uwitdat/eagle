@@ -16,6 +16,7 @@ const HomePage = () => {
             src="/images/pix.avif"
             alt="main band image"
             className="mr-60"
+            leftBorder
           />
           <div>
             <p>
