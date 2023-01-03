@@ -5,14 +5,14 @@ import { ImageWBorder } from '../../components/ImageWBorder'
 
 const HomePage = () => {
   return (
-    <section className="h-screen snap-start">
+    <section className="h-auto sm:h-screen snap-start">
       <Nav />
-      <div className="p-5 md:p-10 text-center mobile:text-start">
-        <h1 className="mt-4 sm:mt-8 lg:mt-20 text-white">
+      <div className="p-5 text-center md:p-10 mobile:text-start">
+        <h1 className="mt-4 text-white sm:mt-8 lg:mt-20">
           Eagle Music <span>Services</span>
         </h1>
-        <div className="flex flex-col mobile:flex-row items-center justify-center mt-10 mobile:mt-20">
-          <div className=" mr-0 mobile:mr-24 lg:mr-32 xl:mr-60">
+        <div className="flex flex-col items-center justify-center mt-10 mobile:flex-row mobile:mt-20">
+          <div className="mr-0  mobile:mr-24 lg:mr-32 xl:mr-60">
             <ImageWBorder
               src="/images/pix.avif"
               alt="main band image"
@@ -25,7 +25,7 @@ const HomePage = () => {
               Redefining the way you book, <br />
               interact, and enjoy your entertainment.{' '}
             </p>
-            <div className="flex flex-col sm:flex-row justify-center mobile:justify-start gap-3 mt-4 sm:mt-6 mobile:mt-8">
+            <div className="flex flex-col justify-center gap-3 mt-4 sm:flex-row mobile:justify-start sm:mt-6 mobile:mt-8">
               <a href={PATHS.CONTACT}>
                 <Button variant="solid">Get In Touch</Button>
               </a>

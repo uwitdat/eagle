@@ -2,7 +2,10 @@ import { ImageWBorder } from '../../components/ImageWBorder'
 
 const AboutPage = () => {
   return (
-    <section className="flex flex-col h-screen bg-dark snap-start" id="about">
+    <section
+      className="flex flex-col h-auto sm:h-screen bg-dark snap-start"
+      id="about"
+    >
       <div className="text-center mobile:text-right">
         <h2 className="mt-10 mr-0 text-white md:mt-20 mobile:mr-60">
           About <span>Us</span>

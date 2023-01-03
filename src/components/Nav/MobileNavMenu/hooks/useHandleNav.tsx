@@ -5,7 +5,9 @@ export const useHandleNav = () => {
   const [navActive, setNavActive] = useState(false)
   const [showNav, setShowNav] = useState(false)
 
-  const handleToggleNav = () => setNavActive(!navActive)
+  const handleToggleNav = () => {
+    setNavActive(!navActive)
+  }
 
   useEffect(() => {
     if (navActive) {
