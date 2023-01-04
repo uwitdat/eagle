@@ -31,12 +31,7 @@ const ServicesPage = () => {
       <div className="flex flex-col justify-between flex-grow px-5">
         <div className="flex flex-col items-center justify-center py-0 mt-3 mobile:py-10 md:flex-row">
           <div className="self-start hidden ml-8 mobile:block lg:ml-0">
-            <ImageWBorder
-              alt="Woman DJ"
-              src="images/pix-3.avif"
-              leftBorder
-              fallback=""
-            />
+            <ImageWBorder alt="Woman DJ" src="images/pix-3.webp" leftBorder />
           </div>
 
           <div className="relative mt-4 ml-0 text-center isolate sm:mt-10 mobile:text-start mobile:ml-24 lg:ml-48 mobile:mt-0">
@@ -47,7 +42,7 @@ const ServicesPage = () => {
               <div className="relative w-64 sm:w-80 inbetween:w-96 aspect-square">
                 <img
                   alt="Woman DJ"
-                  src="images/pix-3.avif"
+                  src="images/pix-3.webp"
                   className="object-cover w-full h-full rounded-full"
                 />
                 <div

@@ -14,9 +14,8 @@ const HomePage = () => {
         <div className="flex flex-col items-center justify-center mt-10 mobile:flex-row mobile:mt-20">
           <div className="mr-0 mobile:mr-24 lg:mr-32 xl:mr-60">
             <ImageWBorder
-              src="images/pix.avif"
+              src="images/pix.webp"
               alt="main band image"
-              fallback="images/IMG_0360.PNG"
               leftBorder
             />
           </div>

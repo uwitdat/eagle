@@ -36,11 +36,7 @@ const AboutPage = () => {
             />
           </div>
         </div>
-        <ImageWBorder
-          alt="Man With Microphone"
-          src={'images/pix-2.avif'}
-          fallback=""
-        />
+        <ImageWBorder alt="Man With Microphone" src={'images/pix-2.webp'} />
       </div>
     </section>
   )
