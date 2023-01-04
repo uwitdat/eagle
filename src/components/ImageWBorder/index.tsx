@@ -10,7 +10,7 @@ export const ImageWBorder = ({ src, alt, leftBorder = false }: ImageProps) => {
   const styles = leftBorder ? `${BASE} right-4` : `${BASE} left-4`
 
   return (
-    <div className="relative z-10 h-64 aspect-square sm:h-72 sm:h-80 mobile:h-96 xl:h-100">
+    <div className="relative z-10 h-56 xxs:h-64 aspect-square sm:h-72 sm:h-80 mobile:h-96 xl:h-100">
       <img
         alt={alt}
         src={src}

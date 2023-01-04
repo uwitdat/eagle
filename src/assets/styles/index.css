@@ -7,23 +7,23 @@
 @layer base {
 
   body {
-    @apply font-primary overflow-x-hidden bg-dark;
+    @apply overflow-x-hidden font-primary bg-dark;
   }
 
   h1 {
-    @apply text-white font-extrabold text-6xl inbetween:text-7xl mobile:text-8xl xl:text-9xl;
+    @apply text-5xl font-extrabold text-white xxs:text-6xl inbetween:text-7xl mobile:text-8xl xl:text-9xl;
   }
 
   h2 {
-    @apply text-white font-extrabold text-6xl md:text-7xl lg:text-8xl tracking-wide;
+    @apply text-5xl font-extrabold tracking-wide text-white xxs:text-6xl md:text-7xl lg:text-8xl;
   }
 
   h3 {
-    @apply text-white font-extrabold text-4xl lg:text-5xl tracking-wide;
+    @apply text-4xl font-extrabold tracking-wide text-white lg:text-5xl;
   }
 
   h4, h5 {
-    @apply text-white font-extrabold text-2xl;
+    @apply text-2xl font-extrabold text-white;
   }
 
   a {
