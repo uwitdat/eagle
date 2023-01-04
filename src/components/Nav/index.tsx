@@ -34,6 +34,7 @@ const Nav = () => {
         <button
           className="relative z-20 block ml-auto md:hidden"
           onClick={handleToggleNav}
+          aria-label="Toggle Mobile Nav Menu"
         >
           <MobileNavIcon navActive={navActive} />
         </button>
