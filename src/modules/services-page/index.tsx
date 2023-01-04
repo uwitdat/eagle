@@ -19,33 +19,53 @@ const ServicesPage = () => {
 
   return (
     <section
-      className="flex flex-col h-auto pb-3 sm:h-screen bg-dark snap-start"
+      className="flex flex-col h-auto pb-3 mb-20 mobile:mb-0 mobile:h-screen bg-dark snap-start"
       id="services"
     >
-      <div className="mt-8 ml-0 text-center mobile:mt-20 mobile:ml-20 mobile:text-start">
-        <h2 className="mb-2 mobile:mb-10">
+      <div className="mt-20 ml-0 text-center mobile:mt-20 mobile:ml-20 mobile:text-start">
+        <h2 className="px-4 mb-2 mobile:mb-10 sm:px-0">
           Our <span>Services</span>
         </h2>
       </div>
 
       <div className="flex flex-col justify-between flex-grow px-5">
         <div className="flex flex-col items-center justify-center py-0 mt-3 mobile:py-10 md:flex-row">
-          <ImageWBorder
-            alt="Woman DJ"
-            src="images/pix-3.avif"
-            leftBorder
-            fallback=""
-          />
+          <div className="self-start hidden ml-8 mobile:block lg:ml-0">
+            <ImageWBorder
+              alt="Woman DJ"
+              src="images/pix-3.avif"
+              leftBorder
+              fallback=""
+            />
+          </div>
 
-          <div className="relative mt-10 ml-0 text-center mobile:text-start mobile:ml-36 lg:ml-60 mobile:mt-0">
+          <div className="relative mt-4 ml-0 text-center isolate sm:mt-10 mobile:text-start mobile:ml-24 lg:ml-48 mobile:mt-0">
+            <div
+              style={{ zIndex: -1 }}
+              className="absolute z-20 flex items-center justify-center w-full h-full isolate mobile:hidden"
+            >
+              <div className="relative w-64 sm:w-80 inbetween:w-96 aspect-square">
+                <img
+                  alt="Woman DJ"
+                  src="images/pix-3.avif"
+                  className="object-cover w-full h-full rounded-full"
+                />
+                <div
+                  style={{ zIndex: -10 }}
+                  className="absolute w-full h-full border-2 rounded-full top-4 border-accent left-4"
+                />
+                <div className="absolute top-0 left-0 z-20 w-screen h-screen opacity-90 bg-dark" />
+              </div>
+            </div>
+
             <h3 className="mb-5 text-white">Is Eagle For You?</h3>
-            <p className="self-center w-full max-w-lg mb-2 text-white">
+            <p className="self-center w-full max-w-lg mb-2 text-white mobile:max-w-sm lg:max-w-lg">
               The short answer is yes. EMS is great for any and all events/
               venues including:
             </p>
 
-            <div className="flex mt-10">
-              <ul className="flex flex-col">
+            <div className="flex mt-10 justify-evenly mobile:justify-start">
+              <ul className="flex flex-col gap-1 mobile:gap-0">
                 {EVENTS_1.map((event, idx) => (
                   <li
                     key={event.id}
@@ -64,7 +84,7 @@ const ServicesPage = () => {
                   </li>
                 ))}
               </ul>
-              <ul className="flex flex-col ml-24">
+              <ul className="flex flex-col gap-1 ml-0 mobile:gap-0 mobile:ml-14 lg:ml-20 xl:ml-24">
                 {EVENTS_2.map((event, idx) => (
                   <li
                     key={event.id}
@@ -88,13 +108,15 @@ const ServicesPage = () => {
               style={{ transitionDelay: '2.5s' }}
               className={
                 isInView
-                  ? `${ANIMATIONS.FADE_IN.initial} ${ANIMATIONS.FADE_IN.animate} ml-32 mt-14`
-                  : `${ANIMATIONS.FADE_IN.initial} ml-32 mt-14`
+                  ? `${ANIMATIONS.FADE_IN.initial} ${ANIMATIONS.FADE_IN.animate} ml-0 mobile:ml-32 mt-14`
+                  : `${ANIMATIONS.FADE_IN.initial} ml-0 mobile:ml-32 mt-14`
               }
               ref={ref}
             >
               <a href={PATHS.CONTACT}>
-                <Button>Interested?</Button>
+                <Button className="w-full px-4 py-3 text-sm font-bold border-2 rounded-lg mobile:w-auto sm:w-4/5 md:text-base lg:text-xl sm:px-8">
+                  Interested?
+                </Button>
               </a>
             </div>
           </div>
