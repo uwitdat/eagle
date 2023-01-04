@@ -14,14 +14,11 @@ const HomePage = () => {
         <div className="flex flex-col items-center justify-center mt-10 mobile:flex-row mobile:mt-20">
           <div className="mr-0  mobile:mr-24 lg:mr-32 xl:mr-60">
             <ImageWBorder
-              src="images/pix.avif"
+              src="src/modules/home-page/assets/pix.avif"
               alt="main band image"
               leftBorder
             />
           </div>
-
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" />
-
           <div className="mt-10 sm:mt-14 mobile:mt-0">
             <p>
               Redefining the way you book, <br />
