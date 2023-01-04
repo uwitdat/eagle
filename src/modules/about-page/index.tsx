@@ -7,16 +7,14 @@ const AboutPage = () => {
       id="about"
     >
       <div className="text-center mobile:text-right">
-        <h2 className="mt-10 mr-0 text-white md:mt-20 mobile:mr-60">
+        <h2 className="mt-10 mr-0 md:mt-20 mobile:mr-60">
           About <span>Us</span>
         </h2>
       </div>
 
       <div className="flex flex-col-reverse items-center justify-center px-5 mt-6 md:flex-row md:mt-32 mobile:mt-20">
         <div className="mr-0 sm:mr-8 mobile:mr-36 lg:mr-60 mt-14 xs:mt-14 sm:mt-6 md:mt-0">
-          <h3 className="mb-5 text-3xl text-white xs:text-4xl lg:text-5xl">
-            What We Do.
-          </h3>
+          <h3 className="mb-5 text-3xl xs:text-4xl lg:text-5xl">What We Do.</h3>
           <p className="w-full max-w-lg mb-2 text-base text-white sm:text-lg lg:text-2xl">
             Eagle Music is your go-to source for all things entertainment. We
             specialize in providing live music, DJ services, multimedia, and
@@ -38,7 +36,11 @@ const AboutPage = () => {
             />
           </div>
         </div>
-        <ImageWBorder alt="Man With Microphone" src={'images/pix-2.avif'} />
+        <ImageWBorder
+          alt="Man With Microphone"
+          src={'images/pix-2.avif'}
+          fallback=""
+        />
       </div>
     </section>
   )

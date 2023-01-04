@@ -19,20 +19,25 @@ const ServicesPage = () => {
 
   return (
     <section
-      className="flex flex-col h-screen pb-3 bg-dark snap-start"
+      className="flex flex-col h-auto pb-3 sm:h-screen bg-dark snap-start"
       id="services"
     >
-      <div className="mt-20 ml-20">
-        <h2 className="mb-10 text-white">
+      <div className="mt-8 ml-0 text-center mobile:mt-20 mobile:ml-20 mobile:text-start">
+        <h2 className="mb-2 mobile:mb-10">
           Our <span>Services</span>
         </h2>
       </div>
 
-      <div className="flex flex-col justify-between flex-grow">
-        <div className="flex justify-center py-10 mt-3">
-          <ImageWBorder alt="Woman DJ" src="images/pix-3.avif" leftBorder />
+      <div className="flex flex-col justify-between flex-grow px-5">
+        <div className="flex flex-col items-center justify-center py-0 mt-3 mobile:py-10 md:flex-row">
+          <ImageWBorder
+            alt="Woman DJ"
+            src="images/pix-3.avif"
+            leftBorder
+            fallback=""
+          />
 
-          <div className="relative ml-60">
+          <div className="relative mt-10 ml-0 text-center mobile:text-start mobile:ml-36 lg:ml-60 mobile:mt-0">
             <h3 className="mb-5 text-white">Is Eagle For You?</h3>
             <p className="self-center w-full max-w-lg mb-2 text-white">
               The short answer is yes. EMS is great for any and all events/
@@ -100,7 +105,7 @@ const ServicesPage = () => {
 }
 
 const EVENT_CLASS =
-  'text-xl leading-relaxed text-gray-400 font-extralight opacity-0'
+  'text-base text-white sm:text-lg lg:text-xl leading-relaxed text-gray-400 font-extralight opacity-0'
 
 const EVENTS_1 = [
   { id: 1, title: 'Weddings' },

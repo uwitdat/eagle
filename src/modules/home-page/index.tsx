@@ -8,17 +8,19 @@ const HomePage = () => {
     <section className="h-auto sm:h-screen snap-start">
       <Nav />
       <div className="p-5 text-center md:p-10 mobile:text-start">
-        <h1 className="mt-4 text-white sm:mt-8 lg:mt-20">
+        <h1 className="mt-4 sm:mt-8 lg:mt-20">
           Eagle Music <span>Services</span>
         </h1>
         <div className="flex flex-col items-center justify-center mt-10 mobile:flex-row mobile:mt-20">
-          <div className="mr-0  mobile:mr-24 lg:mr-32 xl:mr-60">
+          <div className="mr-0 mobile:mr-24 lg:mr-32 xl:mr-60">
             <ImageWBorder
               src="images/pix.avif"
               alt="main band image"
+              fallback="images/IMG_0360.PNG"
               leftBorder
             />
           </div>
+
           <div className="mt-10 sm:mt-14 mobile:mt-0">
             <p>
               Redefining the way you book, <br />
