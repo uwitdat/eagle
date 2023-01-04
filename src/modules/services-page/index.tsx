@@ -122,7 +122,7 @@ const ServicesPage = () => {
 }
 
 const EVENT_CLASS =
-  'text-base text-white sm:text-lg lg:text-xl leading-relaxed text-gray-400 font-extralight opacity-0'
+  'text-sm xxs:text-base text-white sm:text-lg lg:text-xl leading-relaxed text-gray-400 font-extralight opacity-0'
 
 const EVENTS_1 = [
   { id: 1, title: 'Weddings' },
