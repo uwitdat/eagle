@@ -20,6 +20,8 @@ const HomePage = () => {
             />
           </div>
 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" />
+
           <div className="mt-10 sm:mt-14 mobile:mt-0">
             <p>
               Redefining the way you book, <br />
