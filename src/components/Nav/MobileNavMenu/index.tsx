@@ -38,10 +38,18 @@ export const MobileNavMenu = ({
           `${animation}`
         )}
       >
-        <li onClick={handleToggleNav}>Home</li>
-        <li onClick={() => handleScroll('about')}>About</li>
-        <li onClick={() => handleScroll('services')}>Services</li>
-        <li onClick={() => handleScroll('contact')}>Contact</li>
+        <li onClick={handleToggleNav} className="cursor-pointer">
+          Home
+        </li>
+        <li onClick={() => handleScroll('about')} className="cursor-pointer">
+          About
+        </li>
+        <li onClick={() => handleScroll('services')} className="cursor-pointer">
+          Services
+        </li>
+        <li onClick={() => handleScroll('contact')} className="cursor-pointer">
+          Contact
+        </li>
       </ul>
     </div>
   )

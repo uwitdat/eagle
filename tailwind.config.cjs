@@ -6,23 +6,12 @@ module.exports = {
       xxs: '300px',
       xs: '360px',
       sm: '430px',
-      // => @media (min-width: 640px) { ... }
-
       inbetween: '500px',
-
       md: '768px',
-      // => @media (min-width: 768px) { ... }
-
       mobile: '920px',
-
       lg: '1070px',
-      // => @media (min-width: 1024px) { ... }
-
       xl: '1400px',
-      // => @media (min-width: 1280px) { ... }
-
       '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       fontFamily: {
@@ -31,10 +20,7 @@ module.exports = {
       colors: {
         dark: 'rgb(7, 7, 7)',
         'dark-nav': 'rgb(7, 7, 7, .90)',
-        primary: '#ba0053',
-        secondary: '#1B6CE0',
         accent: '#9B91B3',
-        'accent-2': 'rgb(255, 255, 255, .2)',
       },
       spacing: {
         double: '200%',
