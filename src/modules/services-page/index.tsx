@@ -19,7 +19,7 @@ const ServicesPage = () => {
 
   return (
     <section
-      className="flex flex-col h-auto pb-3 mb-20 mobile:mb-0 mobile:h-screen bg-dark snap-start"
+      className="flex flex-col h-auto pb-3 mb-20 mobile:mb-0 bg-dark snap-start"
       id="services"
     >
       <div className="mt-20 ml-0 text-center mobile:mt-20 mobile:ml-20 mobile:text-start">
