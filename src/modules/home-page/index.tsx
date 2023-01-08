@@ -5,7 +5,7 @@ import { ImageWBorder } from '../../components/ImageWBorder'
 
 const HomePage = () => {
   return (
-    <section className="h-auto sm:h-screen snap-start">
+    <section className="h-auto snap-start">
       <Nav />
       <div className="p-5 text-center md:p-10 mobile:text-start">
         <h1 className="mt-4 sm:mt-8 lg:mt-20">

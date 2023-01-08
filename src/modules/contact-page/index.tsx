@@ -85,7 +85,7 @@ const ICONS = [
         <AiFillMail />
       </span>
     ),
-    link: 'mailto:eaglemusicservices@gmail.com',
+    link: 'mailto:contact@eaglemusicservices.ca',
     ariaLabel: 'Mail',
   },
   {
